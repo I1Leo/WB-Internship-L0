@@ -3,8 +3,8 @@
    font-style: normal;
    font-weight: normal;
    src:
-      url('fonts/SegoeUI.woff2') format('woff2'),
-      url('fonts/SegoeUI.woff') format('woff'),
+      url('../fonts/SegoeUI.woff2') format('woff2'),
+      url('../fonts/SegoeUI.woff') format('woff'),
       url('fonts/SegoeUI.ttf') format('ttf'),
       url('fonts/SegoeUI.eot') format('eot');
 }
@@ -14,10 +14,10 @@
    font-style: normal;
    font-weight: 600;
    src:
-      url('fonts/SegoeUI-SemiBold.woff2') format('woff2'),
-      url('fonts/SegoeUI-SemiBold.woff') format('woff'),
-      url('fonts/SegoeUI-SemiBold.ttf') format('ttf'),
-      url('fonts/SegoeUI-SemiBold.eot') format('eot');
+      url('../fonts/SegoeUI-SemiBold.woff2') format('woff2'),
+      url('../fonts/SegoeUI-SemiBold.woff') format('woff'),
+      url('../fonts/SegoeUI-SemiBold.ttf') format('ttf'),
+      url('../fonts/SegoeUI-SemiBold.eot') format('eot');
 }
 
 @font-face {
@@ -25,10 +25,10 @@
    font-style: normal;
    font-weight: bold;
    src:
-      url('fonts/SegoeUI-Bold.woff2') format('woff2'),
-      url('fonts/SegoeUI-Bold.woff') format('woff'),
-      url('fonts/SegoeUI-Bold.ttf') format('ttf'),
-      url('fonts/SegoeUI-Bold.eot') format('eot');
+      url('../fonts/SegoeUI-Bold.woff2') format('woff2'),
+      url('../fonts/SegoeUI-Bold.woff') format('woff'),
+      url('../fonts/SegoeUI-Bold.ttf') format('ttf'),
+      url('../fonts/SegoeUI-Bold.eot') format('eot');
 }
 
 /* General */
@@ -70,7 +70,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-   background: url(img/main/basket/checked_checkbox.svg);
+   background: url('img/main/basket/checked_checkbox.svg');
    border: none;
 }
 
@@ -1952,7 +1952,7 @@ button:hover {
 }
 
 .rights-form__checkbox:checked {
-   background: url(img/main/order/rights-checkbox.svg) no-repeat center !important;
+   background: url('img/main/order/rights-checkbox.svg') no-repeat center !important;
 }
 
 .rights-form__label {
