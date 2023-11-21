@@ -9,6 +9,7 @@ const productObject = {
    'Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe': {
       price: 11500.235,
       discountedPrice: 10500.235,
+      remain: Infinity
    },
    'Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell': {
       price: 475,
