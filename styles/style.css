@@ -3,10 +3,10 @@
    font-style: normal;
    font-weight: normal;
    src:
-      url('/fonts/SegoeUI.woff2') format('woff2'),
-      url('/fonts/SegoeUI.woff') format('woff'),
-      url('/fonts/SegoeUI.ttf') format('ttf'),
-      url('/fonts/SegoeUI.eot') format('eot');
+      url('fonts/SegoeUI.woff2') format('woff2'),
+      url('fonts/SegoeUI.woff') format('woff'),
+      url('fonts/SegoeUI.ttf') format('ttf'),
+      url('fonts/SegoeUI.eot') format('eot');
 }
 
 @font-face {
@@ -14,10 +14,10 @@
    font-style: normal;
    font-weight: 600;
    src:
-      url('/fonts/SegoeUI-SemiBold.woff2') format('woff2'),
-      url('/fonts/SegoeUI-SemiBold.woff') format('woff'),
-      url('/fonts/SegoeUI-SemiBold.ttf') format('ttf'),
-      url('/fonts/SegoeUI-SemiBold.eot') format('eot');
+      url('fonts/SegoeUI-SemiBold.woff2') format('woff2'),
+      url('fonts/SegoeUI-SemiBold.woff') format('woff'),
+      url('fonts/SegoeUI-SemiBold.ttf') format('ttf'),
+      url('fonts/SegoeUI-SemiBold.eot') format('eot');
 }
 
 @font-face {
@@ -25,10 +25,10 @@
    font-style: normal;
    font-weight: bold;
    src:
-      url('/fonts/SegoeUI-Bold.woff2') format('woff2'),
-      url('/fonts/SegoeUI-Bold.woff') format('woff'),
-      url('/fonts/SegoeUI-Bold.ttf') format('ttf'),
-      url('/fonts/SegoeUI-Bold.eot') format('eot');
+      url('fonts/SegoeUI-Bold.woff2') format('woff2'),
+      url('fonts/SegoeUI-Bold.woff') format('woff'),
+      url('fonts/SegoeUI-Bold.ttf') format('ttf'),
+      url('fonts/SegoeUI-Bold.eot') format('eot');
 }
 
 /* General */
@@ -70,7 +70,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-   background: url(/img/main/basket/checked_checkbox.svg);
+   background: url(img/main/basket/checked_checkbox.svg);
    border: none;
 }
 
@@ -416,16 +416,7 @@ button:hover {
    margin: 0 auto;
 
    display: flex;
-   gap: 32px
-      /* display: grid;
-   grid-template-columns: minmax(640px, 891px) minmax(303px, 429px);
-   column-gap: 32px;
-   row-gap: 16px;
-   grid-template-areas: 'basket order'
-      'basket nothing'
-      'delivery nothing'
-      'payment nothing'
-      'recipient nothing'; */
+   gap: 32px;
 }
 
 @media (max-width: 1023px) {
@@ -436,15 +427,6 @@ button:hover {
       gap: 16px;
    }
 }
-
-/* @media (max-width: 320px) {
-   .main__container {
-      max-width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-   }
-} */
 
 .main__main-content {
    display: flex;
@@ -618,7 +600,6 @@ button:hover {
 }
 
 .selection-item__info {
-   /* flex: 1 0 0; */
    grid-area: info;
 }
 
@@ -1163,7 +1144,7 @@ button:hover {
 }
 
 .giving__rating::before {
-   content: url(/img/main/delivery/rating-star.svg);
+   content: url(img/main/delivery/rating-star.svg);
    padding-right: 2px;
 }
 
@@ -1403,7 +1384,7 @@ button:hover {
 }
 
 .delivery-popup-form__rating::before {
-   content: url('/img/main/delivery/rating-star.svg');
+   content: url('img/main/delivery/rating-star.svg');
    height: 12px;
 }
 
@@ -1971,7 +1952,7 @@ button:hover {
 }
 
 .rights-form__checkbox:checked {
-   background: url(/img/main/order/rights-checkbox.svg) no-repeat center !important;
+   background: url(img/main/order/rights-checkbox.svg) no-repeat center !important;
 }
 
 .rights-form__label {

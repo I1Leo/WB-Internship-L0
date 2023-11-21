@@ -596,7 +596,7 @@ function isFormEmpty() {
 }
 
 if (document.documentElement.clientWidth < 500) {
-   document.querySelector('.header-burger__icon').setAttribute('src', '/img/header/mobile-burger.svg');
+   document.querySelector('.header-burger__icon').setAttribute('src', 'img/header/mobile-burger.svg');
    document.querySelectorAll('.selection-info__headline').forEach((item, index) => {
       if (index === 1) {
          item.textContent = 'Силиконовый чехол картхолдер (отверстия) для...'
@@ -606,7 +606,7 @@ if (document.documentElement.clientWidth < 500) {
 
    });
 } else {
-   document.querySelector('.header-burger__icon').setAttribute('src', '/img/header/burger.svg');
+   document.querySelector('.header-burger__icon').setAttribute('src', 'img/header/burger.svg');
 }
 
 if (document.documentElement.clientWidth < 461) {
