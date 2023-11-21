@@ -298,7 +298,8 @@ function handleOrderForm(target) {
 
    if (target.classList.contains('change-icon')) {
       const popupElement = target.classList.contains('change-icon__delivery') ? document.querySelector('.delivery-popup') : document.querySelector('.payment-popup');
-      renderPopup(popupElement)
+      renderPopup(popupElement);
+      document.querySelector('.mask').style.display = 'block'
    }
 
    if (target === orderBtn) {
@@ -313,6 +314,7 @@ deliveryPopup.addEventListener('click', (event) => {
    let target = event.target;
 
    if (target.closest('button').classList.contains('delivery-popup__closed-btn')) {
+      document.querySelector('.mask').style.display = 'none'
       deliveryPopup.classList.toggle('visible');
 
       if (document.documentElement.clientWidth <= 500) {
@@ -345,6 +347,7 @@ paymentPopup.addEventListener('click', (event) => {
 
    if (target.closest('button').classList.contains('payment-popup__closed-btn')) {
       paymentPopup.classList.toggle('visible');
+      document.querySelector('.mask').style.display = 'none'
 
       if (document.documentElement.clientWidth <= 500) {
          document.querySelector('body').classList.remove('fixed');
@@ -357,13 +360,14 @@ const buttonChangeDelivery = document.querySelector('.delivery__change');
 
 buttonChangeDelivery.addEventListener('click', () => {
    renderPopup(deliveryPopup);
+   document.querySelector('.mask').style.display = 'block'
 })
 
 const buttonChangePayment = document.querySelector('.payment__change');
 
 buttonChangePayment.addEventListener('click', () => {
    renderPopup(paymentPopup);
-
+   document.querySelector('.mask').style.display = 'block'
 })
 
 const rejectFree = document.querySelectorAll('.reject__free')
@@ -397,6 +401,7 @@ const deliveryChooseBtn = document.querySelector('.delivery-popup-form__btn-choo
 
 deliveryChooseBtn.addEventListener('click', () => {
    handleDeliveryChooseBtn();
+   document.querySelector('.mask').style.display = 'none'
 })
 
 function handleDeliveryChooseBtn() {
@@ -427,6 +432,7 @@ const paymentChooseBtn = document.querySelector('.payment-popup-form__btn-choose
 
 paymentChooseBtn.addEventListener('click', () => {
    handlePaymentChooseBtn();
+   document.querySelector('.mask').style.display = 'none'
 })
 
 function handlePaymentChooseBtn() {
