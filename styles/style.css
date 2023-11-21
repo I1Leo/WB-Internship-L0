@@ -70,7 +70,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-   background: url('img/main/basket/checked_checkbox.svg');
+   background: url('../img/main/basket/checked_checkbox.svg');
    border: none;
 }
 
@@ -1144,7 +1144,7 @@ button:hover {
 }
 
 .giving__rating::before {
-   content: url('img/main/delivery/rating-star.svg');
+   content: url('../img/main/delivery/rating-star.svg');
    padding-right: 2px;
 }
 
@@ -1952,7 +1952,7 @@ button:hover {
 }
 
 .rights-form__checkbox:checked {
-   background: url('img/main/order/rights-checkbox.svg') no-repeat center !important;
+   background: url('../img/main/order/rights-checkbox.svg') no-repeat center !important;
 }
 
 .rights-form__label {

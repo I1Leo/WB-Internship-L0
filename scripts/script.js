@@ -265,8 +265,6 @@ function handleArrowClick(target) {
       headerLabel.classList.toggle('undisplayed');
    }
 
-   console.log(target.closest('.absention-header'));
-
    if (target.closest('.absention-header')) {
       target.closest('.absention-header').classList.toggle('absention-header_closed');
    }
