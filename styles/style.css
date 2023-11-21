@@ -1144,7 +1144,7 @@ button:hover {
 }
 
 .giving__rating::before {
-   content: url(img/main/delivery/rating-star.svg);
+   content: url('img/main/delivery/rating-star.svg');
    padding-right: 2px;
 }
 
